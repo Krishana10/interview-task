@@ -1,0 +1,87 @@
+.process-section {
+  max-width: 920px;
+  margin: 80px auto;
+  padding: 0 12px;
+}
+.process-header {
+  margin-bottom: 48px;
+}
+.process-header .subheading {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #0d6efd;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.process-header h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #121f47;
+}
+.process-header .italic {
+  font-style: italic;
+  color: #0d6efd;
+}
+
+.process-steps {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+  user-select: none;
+  flex-wrap: wrap;
+}
+.process-step {
+  background: #f6f9ff;
+  border-radius: 18px;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 200px;
+  box-shadow: 0 8px 12px rgb(13 110 253 / 0.1);
+  transition: box-shadow 0.3s ease;
+  cursor: default;
+}
+.process-step:hover {
+  box-shadow: 0 18px 40px rgb(13 110 253 / 0.25);
+}
+.step-icon {
+  font-size: 1.8rem;
+  color: #0d6efd;
+  margin-bottom: 12px;
+}
+.step-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.step-number {
+  font-weight: 900;
+  font-size: 2.2rem;
+  color: #a6c6ff;
+  user-select: none;
+}
+.step-title {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin: 0;
+  color: #121f47;
+}
+.step-desc {
+  font-size: 0.9rem;
+  color: #495057;
+  line-height: 1.4;
+}
+
+@media (max-width: 720px) {
+  .process-steps {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .process-step {
+    flex-grow: 1;
+  }
+}

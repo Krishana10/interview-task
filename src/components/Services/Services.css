@@ -1,0 +1,117 @@
+.services-section {
+  max-width: 1200px;
+  margin: 0 auto 64px auto;
+  text-align: center;
+}
+.section-subtitle {
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: #0d6efd;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.services-grid {
+  display: grid;
+  gap: 36px;
+  margin: 36px 0 48px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.service-card {
+  background: white;
+  border-radius: 18px;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+  cursor: default;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #0d6efd, #0056b3);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover::before {
+  transform: scaleX(1);
+}
+.service-icon {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #0d6efd;
+  margin: 0 auto 20px;
+  background: linear-gradient(135deg, rgba(13, 110, 253, 0.1) 0%, rgba(13, 110, 253, 0.05) 100%);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+  transform: scale(1.1) rotate(5deg);
+  background: linear-gradient(135deg, #0d6efd 0%, #0056b3 100%);
+  color: white;
+}
+.service-title {
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: #121f47;
+}
+.service-points {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 16px;
+  color: #495057;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-align: left;
+}
+.service-points li {
+  margin-bottom: 8px;
+}
+.service-img {
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: auto;
+  box-shadow: 0 8px 24px rgb(13 110 253 / 0.18);
+}
+.service-img img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  user-select: none;
+  transition: transform 0.5s ease;
+}
+
+.service-card:hover .service-img img {
+  transform: scale(1.1);
+}
+.btn.see-details {
+  border-radius: 30px;
+  padding: 12px 26px;
+  font-weight: 600;
+  font-size: 1rem;
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.btn.see-details:hover {
+  background-color: #084fc3;
+}
